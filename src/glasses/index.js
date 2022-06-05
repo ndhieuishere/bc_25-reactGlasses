@@ -7,19 +7,25 @@ import GlassesList from "./glassesList";
 export default class GlassCart extends Component {
   constructor(props) {
     super(props);
-    this.state = { glassesList: Data };
+    this.state = { glassesList: Data, detailGlass: Data[0] };
   }
 
+  handleDetail = (item) => {
+    this.setState({
+      detailGlass: item,
+    });
+  };
+
   render() {
-    const {glassesList} = this.state;
+    const { glassesList, detailGlass } = this.state;
 
     return (
       <div className="backGround">
         <Header />
-        <div >
-          <ModelList getData={glassesList}/>
+        <div>
+          <ModelList getData={glassesList} detailGlass={detailGlass}/>
         </div>
-        <GlassesList getData={glassesList}/>
+        <GlassesList getData={glassesList} getDetail={this.handleDetail} />
       </div>
     );
   }

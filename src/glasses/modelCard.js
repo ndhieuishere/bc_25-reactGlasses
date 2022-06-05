@@ -16,7 +16,7 @@ export default class Model extends Component {
             }}
           >
             <img className="card-img-top" src="./public/img/model.jpg" alt="" />
-            <img src={item.url} style={{width:165,position:"absolute",top:135,left:427,opacity:1}}></img>
+            <img src={item.url} style={{width:165,position:"absolute",top:135,left:429  ,opacity:1}}></img>
             <div className="card-body">
               
               <h4

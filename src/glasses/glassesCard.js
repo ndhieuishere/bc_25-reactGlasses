@@ -6,13 +6,14 @@ export default class Glasses extends Component {
     this.setState({
     })
   };
- 
+
+
   renderListGlasses = () => {
     const listGlassesNew = this.props.getData.map((item) => {
       return (
         <button
-          onClick={this.handleChangeGlasses}
           style={{ backgroundColor: "white", margin: 10 }}
+          onClick={()=>{this.props.getDetail(item)}}
         >
           <img src={item.url} style={{ height: 50, width: 100 }} />
         </button>

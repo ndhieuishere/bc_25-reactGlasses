@@ -6,7 +6,7 @@ export default class GlassesList extends Component {
     return (
       <div className="container" style={{padding:150}}>
         <div className="row">
-          <Glasses getData={this.props.getData}/>
+          <Glasses getData={this.props.getData} getDetail={this.props.getDetail}/>
         </div>
       </div>
     );
