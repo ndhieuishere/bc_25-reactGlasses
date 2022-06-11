@@ -1,15 +1,10 @@
 import React, { Component } from "react";
 
 export default class ActiveModel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      detailGlass:this.props.getDetail
-    };
-  }
+  
 
   render() {
-    const detailGlass= this.state
+    const detailGlass= this.props
     return (
       <div className="card active-background">
         <img

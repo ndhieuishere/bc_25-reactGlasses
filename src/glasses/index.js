@@ -12,18 +12,17 @@ export default class GlassCart extends Component {
 
   handleDetail = (item) => {
     this.setState({
-      detailGlass: item,
+      glassesList: item,
     });
   };
 
   render() {
     const { glassesList, detailGlass } = this.state;
-
     return (
       <div className="backGround">
         <Header />
         <div>
-          <ModelList getData={glassesList} detailGlass={detailGlass}/>
+          <ModelList getData={glassesList} />
         </div>
         <GlassesList getData={glassesList} getDetail={this.handleDetail} />
       </div>

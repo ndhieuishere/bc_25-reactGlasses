@@ -2,13 +2,8 @@ import React, { Component } from "react";
 
 export default class Glasses extends Component {
 
-  handleChangeGlasses = () => {
-    this.setState({
-    })
-  };
-
-
   renderListGlasses = () => {
+    console.log(this.props);
     const listGlassesNew = this.props.getData.map((item) => {
       return (
         <button

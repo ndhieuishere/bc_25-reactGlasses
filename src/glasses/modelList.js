@@ -7,7 +7,7 @@ export default class ModelList extends Component {
       <div className="container">
         <div className="row">
           <Model getData={this.props.getData} />
-          <ActiveModel getData={this.props.getData} getDetail={this.props.detailGlass}/>
+          <ActiveModel getData={this.props.getData} />
         </div>
       </div>
     );
